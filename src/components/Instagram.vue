@@ -20,4 +20,10 @@
 //     InstagramEmbed
 //   },
 // });
+import SampleApiService from "../services/SampleApiService";
+
+SampleApiService.get_Hamabeminami();
+console.log(SampleApiService)
+SampleApiService.get_Hashimotokanna();
+console.log(SampleApiService)
 </script>

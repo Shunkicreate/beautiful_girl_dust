@@ -15,6 +15,34 @@
 // eslint-disable-next-line
 /* eslint-disable */ 
 import * as d3 from 'd3'  //有効にする
+import SampleApiService from "../services/SampleApiService";
+
+// SampleApiService.get();
+// console.log(SampleApiService)
+// SampleApiService.get_Hamabeminami();
+// console.log(SampleApiService)
+// SampleApiService.get_Hashimotokanna();
+// console.log(SampleApiService)
+
+const userId = "Shunkicreate";
+fetch(`https://api.github.com/users/${encodeURIComponent(userId)}`)
+    .then(response => {
+        console.log(response.status);
+        return response.json().then(userInfo => {
+            console.log(userInfo);
+        });
+    }).catch(error => {
+        console.error(error);
+    });
+fetch(`https://google.com`)
+    .then(response => {
+        console.log(response.status);
+        return response.json().then(userInfo => {
+            console.log(userInfo);
+        });
+    }).catch(error => {
+        console.error(error);
+    });
 
 export default {
   name: 'top',
